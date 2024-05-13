@@ -4,6 +4,8 @@ var humanScore = 0;
 var computerScore = 0;
 
 function playGame() {
+  var humanScore = 0;
+  var computerScore = 0;
  for (let i = 0; i < 5; i++) {
 
   const randIndex = Math.floor(Math.random() * 3);
@@ -56,17 +58,17 @@ function playGame() {
 }
 
 if (humanScore > computerScore) {
-    console.log("You won the game.");
+    console.log("Final score: " + humanScore + " to " + computerScore + ". You won.");
 }
 else if (humanScore < computerScore) {
-  console.log("You lost the game.");
+  console.log("Final score: " + humanScore + " to " + computerScore + ". You lost.");
 }
 else if (humanScore == computerScore) {
-  console.log("You tied the game.");
+  console.log("Final score: " + humanScore + " to " + computerScore + ". You tied.");
 }
 
 }; //end playGame
-
+  
 
 playGame();
 
