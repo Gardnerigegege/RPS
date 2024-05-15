@@ -4,8 +4,6 @@ var humanScore = 0;
 var computerScore = 0;
 
 function playGame() {
-  var humanScore = 0;
-  var computerScore = 0;
  for (let i = 0; i < 5; i++) {
 
   const randIndex = Math.floor(Math.random() * 3);
